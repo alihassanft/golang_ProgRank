@@ -1,0 +1,15 @@
+
+<!-- varibale class -->
+we declrae variable using #var keyworkd and data tye like int 
+eg var a int
+also make sure we cant declare a varibale until we need and we use otheriwse we cant
+and bydefault we decalre a var which we print and dont give hium value for int its print zero
+
+<!-- discussion -->
+<!-- red line error on main -->
+this fille tutorial data and error hanlding
+i dont know why but im same dirctory we cant save .go file we need create separte folder for evry separte file 
+here is url 
+https://stackoverflow.com/questions/66970531/vs-code-go-main-redeclared-in-this-block
+
+
