@@ -1,15 +1,44 @@
 
-<!-- varibale class -->
-we declrae variable using #var keyworkd and data tye like int 
-eg var a int
-also make sure we cant declare a varibale until we need and we use otheriwse we cant
-and bydefault we decalre a var which we print and dont give hium value for int its print zero
+<!--Variable Class -->
+We cannot use a global value without the `var` keyword; it is mandatory. When defining a global variable, we must ensure it is declared properly, for example, `var a = 10`.
 
-<!-- discussion -->
-<!-- red line error on main -->
-this fille tutorial data and error hanlding
-i dont know why but im same dirctory we cant save .go file we need create separte folder for evry separte file 
-here is url 
-https://stackoverflow.com/questions/66970531/vs-code-go-main-redeclared-in-this-block
+We declare variables using the `var` keyword along with a data type, such as `int`. For example: `var a int`. Additionally, we should only declare a variable when we need it—otherwise, we shouldn’t. If we declare a variable, don’t assign it a value, and then print it, the default value for an `int` type will be `0`.
+
+---
+
+<!-- Discussion -->
+#Red Line Error on `main`
+This file contains tutorial data and error handling examples. I don’t know why, but even though I’m in the same directory, I can’t save a `.go` file. It seems we need to create a separate folder for every individual file.  
+Here is a relevant URL for reference:  
+[Stack Overflow: "VS Code Go: main redeclared in this block"](https://stackoverflow.com/questions/66970531/vs-code-go-main-redeclared-in-this-block)
+
+---
+
+ <!-- Scope of Variables -->
+*(Note: Referring to your "30:56minit end strat scope varaivble" as the start of this section)*
+
+We cannot use a global value without the `var` keyword; it’s mandatory. When defining a global variable, we must declare it properly, such as `var a = 10`.
+
+There are three types of variable scopes, along with a concept called "shadowing":
+
+1. Global Scope:  
+   - Available throughout the entire program, even outside functions.  
+   - Defined using PascalCase (e.g., `FirstName`).  
+   - Must be under the `main` package. For example: `FirstValue = 59`.
+
+2. Local Scope:  
+   - Limited to within a function only.
+
+3. Package-Level Scope:  
+   - Defined using camelCase (e.g., `userName`).  
+   - Acts like a global variable and can be used throughout the application. For example: `firstValue = 59`.
+
+4. Shadowing:  
+   Occurs when we define a variable with the same name in different scopes. For example, if we define a global variable `var a = 11` and then inside a function define `var a = 9`, the function will use `9` because it prioritizes the nearest value (local scope overrides global scope).
 
 
+<!-- type and value using prinf  -->
+where type we use %T, for value we use %varname
+
+<!-- skip 42minit converison liek int32/64 -->
+<!-- start primitive data types go 52:32 -->
