@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// 30:56minit end
+// 30:56minit end strat scope varaivble
 
 func main() {
 	// two mtehod declar varibale
@@ -29,4 +29,19 @@ func main() {
 	// var b int
 	// fmt.Println("variable a:", a)
 	// fmt.Println("print zero", b)
+
+	// scope varaible
+	// 30:56minit end strat scope varaivble
+	// three type of scope variable
+	// global: in all over the program even out of function
+	// local:  only withint functionn
+	// package_level:
+
+	// type and value using prinf
+
+	z := "ali"
+
+	fmt.Printf("%v, %T", z, z)
+
+	// start primitive data types go 52:32
 }
