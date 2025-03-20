@@ -1,3 +1,6 @@
+<!-- tarck record last topic Start MAp 1hr 26minit 18sec -->
+
+
 
 <!--Variable Class -->
 We cannot use a global value without the `var` keyword; it is mandatory. When defining a global variable, we must ensure it is declared properly, for example, `var a = 10`.
@@ -133,3 +136,5 @@ fmt.Println(matrix[1][2]) // Outputs: 6 (second row, third column)
   fmt.Println(b) // Outputs: [10 2 3]
   ```
 - Because of their fixed size, arrays are less commonly used than **slices**, which are more flexible. Slices are built on top of arrays and can grow or shrink dynamically.
+
+
