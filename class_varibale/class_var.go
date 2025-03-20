@@ -49,4 +49,5 @@ func main() {
 	fmt.Printf("%v, %T", z, z)
 
 	// start primitive data types go 52:32
+	// discuss comlex64-32, int/float 8-16,32-64 and so on  complex and imaginary complex64-126 defualt 126
 }

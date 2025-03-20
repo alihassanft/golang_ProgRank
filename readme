@@ -42,3 +42,94 @@ where type we use %T, for value we use %varname
 
 <!-- skip 42minit converison liek int32/64 -->
 <!-- start primitive data types go 52:32 -->
+	// start primitive data types go 52:32
+	// discuss comlex64-32, int/float 8-16,32-64 and so on  complex and imaginary complex64-126 defualt 126
+
+
+<!-- constant 1hr:3m:24sec -->
+	// 1st method thi be constent we cant change value
+	const data = 25
+	println("constant value", data)
+	const (
+		a = iota //idont undertand what is iota but its define a serilz and we dont need asign value to variable of consit
+		b
+		c
+		// here in abouv three serils if i use _ ist skip that number
+		_ //so here its skiping numver 3 becz its start fro 0
+		d
+	)
+
+
+<!-- Array  1hr 12m 4sec-->
+data from gork
+In Go, an array is a fixed-size, ordered collection of elements of the same type. Here's a rundown of how arrays work in Go:
+
+### Declaration and Initialization
+You declare an array by specifying its size and type. The size is part of the type and must be a constant known at compile time.
+
+```go
+// Declaration with size and type
+var numbers [5]int // Array of 5 integers, initialized to zero values (0, 0, 0, 0, 0)
+
+// Declaration and initialization
+numbers := [3]int{1, 2, 3} // Array with 3 elements
+
+// Using ellipsis (...) to infer size from initialization
+numbers := [...]int{1, 2, 3, 4} // Size is 4, inferred from the number of elements
+```
+
+### Key Characteristics
+1. **Fixed Size**: The length of an array is part of its type and cannot change after declaration.
+2. **Zero-Initialized**: If you declare an array without initializing it, all elements are set to the zero value of the type (e.g., `0` for `int`, `""` for `string`).
+3. **Indexed Access**: Elements are accessed using zero-based indices (`arr[0]`, `arr[1]`, etc.).
+
+```go
+numbers := [3]int{10, 20, 30}
+fmt.Println(numbers[0]) // Outputs: 10
+numbers[1] = 50         // Modifies the second element
+fmt.Println(numbers)    // Outputs: [10 50 30]
+```
+
+### Length
+You can get the length of an array using the built-in `len()` function:
+```go
+numbers := [4]int{1, 2, 3, 4}
+fmt.Println(len(numbers)) // Outputs: 4
+```
+
+### Iteration
+You can loop over an array using a `for` loop or the `range` keyword:
+```go
+numbers := [3]int{10, 20, 30}
+
+// Standard for loop
+for i := 0; i < len(numbers); i++ {
+    fmt.Println(numbers[i])
+}
+
+// Using range
+for index, value := range numbers {
+    fmt.Printf("Index: %d, Value: %d\n", index, value)
+}
+```
+
+### Multi-dimensional Arrays
+Go supports multi-dimensional arrays:
+```go
+var matrix [2][3]int = [2][3]int{
+    {1, 2, 3},
+    {4, 5, 6},
+}
+fmt.Println(matrix[1][2]) // Outputs: 6 (second row, third column)
+```
+
+### Notes
+- Arrays are **values** in Go, not references. Assigning an array to a new variable copies it:
+  ```go
+  a := [3]int{1, 2, 3}
+  b := a
+  b[0] = 10
+  fmt.Println(a) // Outputs: [1 2 3] (original unchanged)
+  fmt.Println(b) // Outputs: [10 2 3]
+  ```
+- Because of their fixed size, arrays are less commonly used than **slices**, which are more flexible. Slices are built on top of arrays and can grow or shrink dynamically.
