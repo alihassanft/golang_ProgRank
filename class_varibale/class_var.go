@@ -7,7 +7,12 @@ import "fmt"
 func main() {
 	// two mtehod declar varibale
 
+	// test
+	k := 9
+	fmt.Println("K value", k)
+
 	// 1st method
+
 	var a int //declaration
 	a = 11    //initialization
 
