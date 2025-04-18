@@ -1,6 +1,6 @@
 <!-- tarck record last topic Start forloop 2hr 08minit 00sec   -->
 
-
+<!-- some new commnet -->
 
 <!--Variable Class -->
 We cannot use a global value without the `var` keyword; it is mandatory. When defining a global variable, we must ensure it is declared properly, for example, `var a = 10`.
