@@ -1,0 +1,18 @@
+Go (Golang)
+Go has one primary loop type:
+
+for loop: The only loop construct in Go, used for all looping scenarios.
+Standard for loop: for i := 0; i < 5; i++ { fmt.Println(i) }
+Condition-only (like while): for x < 5 { x++ }
+Infinite loop: for { ... }
+Range-based: for i, v := range slice { ... } (for iterating over arrays, slices, maps, strings, or channels).
+Go also supports:
+
+Nested loops: for loops within for loops.
+Loop control statements:
+break: Exits the loop.
+continue: Skips to the next iteration.
+goto: Jumps to a labeled statement (rarely used).
+Summary
+Python: 2 loop types (for, while) + control statements.
+Go: 1 loop type (for, with multiple forms) + control statements.
