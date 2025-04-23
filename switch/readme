@@ -21,3 +21,19 @@ The expression is evaluated once
 The value of the switch expression is compared with the values of each case
 If there is a match, the associated block of code is executed
 The default keyword is optional. It specifies some code to run if there is no case match
+
+
+// The Multi-case switch Statement
+It is possible to have multiple values for each case in the switch statement:
+
+Syntax
+switch expression {
+case x,y:
+   // code block if expression is evaluated to x or y
+case v,w:
+   // code block if expression is evaluated to v or w
+case z:
+...
+default:
+   // code block if expression is not found in any cases
+}
