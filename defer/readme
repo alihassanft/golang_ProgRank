@@ -1,0 +1,7 @@
+Definition of defer in Go
+The defer keyword in Go schedules a function call to be executed after the surrounding function returns, regardless of whether the function completes normally or panics. It is commonly used for cleanup tasks, such as closing files, releasing resources, or unlocking mutexes. Deferred calls are executed in LIFO (Last-In, First-Out) order, meaning the last defer statement is executed first.
+
+Key Points:
+defer postpones the execution of a function or statement until the function exits.
+It ensures cleanup tasks are performed even if an error occurs.
+Multiple defer statements are executed in reverse order (stack-like behavior).
